@@ -1,2 +1,2 @@
-FE_ADESIONE|123568|Descrizione errore|asa7a7s7d772;88987dsf87s9d8f;
-FE_ALLEGATO|9657|Descrizione errore|asa7a7s7d772
+FE_ADESIONE|123568|Descrizione errore|5b9fa4ac6285086a6a6c83f0;5b9faa9b3adfcf6c9341a0ee;
+FE_ALLEGATO|9657|Descrizione errore|5b9fa4ac6285086a6a6c83f0
