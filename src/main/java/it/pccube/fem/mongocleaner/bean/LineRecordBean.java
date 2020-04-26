@@ -43,6 +43,12 @@ public class LineRecordBean {
 	public void setListId(List<String> listId) {
 		this.listId = listId;
 	}
+
+	@Override
+	public String toString() {
+		return "LineRecordBean [entity=" + entity + ", primaryKey=" + primaryKey + ", errorDescription="
+				+ errorDescription + ", listId=" + listId + "]";
+	}
 	
 	
 	

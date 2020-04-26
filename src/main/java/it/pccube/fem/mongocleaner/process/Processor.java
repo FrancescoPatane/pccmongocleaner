@@ -28,6 +28,9 @@ public class Processor {
 	
 	@Autowired
 	private DocumentaleService docService;
+	
+	@Autowired
+	private FileManager fileManager;
 
 	public void processDiscardedFile() {
 		try  
@@ -35,9 +38,9 @@ public class Processor {
 			FileInputStream fis=new FileInputStream(inputFilePath);       
 			Scanner sc=new Scanner(fis);    
 			while(sc.hasNextLine())  {  
-				LineRecordBean lineData = this.readLineData(sc.nextLine());
-//				this.deleteDocuments(lineData.getListId());
-				this.getDocuments(lineData.getListId());
+				LineRecordBean lineData = this.fileManager.readLineData(sc.nextLine());
+				this.deleteDocuments(lineData);
+//				this.getDocuments(lineData.getListId());
 			}  
 			sc.close();     
 		}  
@@ -47,19 +50,17 @@ public class Processor {
 	}
 	
 	
-	private LineRecordBean readLineData(String line) {
-		LineRecordBean data = new LineRecordBean();
-		String[] array = line.split("\\|");
-		data.setEntity(array[0]);
-		data.setErrorDescription(array[1]);
-		data.setPrimaryKey(array[2]);
-		data.setListId(Arrays.asList(array[3].split(";")));
-		return data;
-	}
+
 	
-	private void deleteDocuments (List<String> listId) {
-		for(String id: listId) {
-			this.callDelete(id);
+	private void deleteDocuments (LineRecordBean lineData) {
+		for(String id: lineData.getListId()) {
+			try {
+				this.callDelete(id);
+			}catch(Exception e){
+				logger.error("Error calling delete service for line" + lineData.toString() + " id: " + id);
+				this.fileManager.writeFailureFile(lineData);
+			}
+			
 		}
 	}
 	
