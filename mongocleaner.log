@@ -1,7 +1,0 @@
-2020-04-27 11:19:14.265  INFO 16892 --- [main] i.p.f.m.MongocleanerApplication          : Starting MongocleanerApplication on DESKTOP-FARG9H9 with PID 16892 (C:\consip-eproc2\projects\mongocleaner\mongocleaner\target\classes started by Developer-PCCube in C:\consip-eproc2\projects\mongocleaner\mongocleaner)
-2020-04-27 11:19:14.268  INFO 16892 --- [main] i.p.f.m.MongocleanerApplication          : No active profile set, falling back to default profiles: default
-2020-04-27 11:19:14.763  INFO 16892 --- [main] i.p.f.m.client.RestfulClientB2B          : restful client successfully initialized
-2020-04-27 11:19:14.874  INFO 16892 --- [main] i.p.f.m.MongocleanerApplication          : Started MongocleanerApplication in 1.004 seconds (JVM running for 1.373)
-2020-04-27 11:19:14.877  INFO 16892 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
-2020-04-27 11:19:14.878  INFO 16892 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9faa9b3adfcf6c9341a0ee
-2020-04-27 11:19:14.878  INFO 16892 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
