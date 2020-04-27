@@ -46,7 +46,7 @@ public class FileManager {
 				out.write("Elements in input: " + Counter.totalInputCounter + System.lineSeparator()); 
 				out.write("Elements removed: " + Counter.successfullyRemovedCounter + System.lineSeparator()); 
 				out.write("Elements not removed: " + Counter.notRemovedCounter + System.lineSeparator()); 
-				out.write("####END OF EXECUTION####"); 
+				out.write("####END OF EXECUTION####" + System.lineSeparator()); 
 			} 
 		}catch (IOException e) { 
 			logger.error("Exception writing end statistic to outcome file" + e.getMessage());
