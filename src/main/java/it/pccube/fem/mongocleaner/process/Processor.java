@@ -26,7 +26,7 @@ public class Processor {
 	@Autowired
 	private FileManager fileManager;
 
-	public void processDiscardedFile(String inputFilePath) {
+	public void processDiscardedFile() {
 		try (Scanner sc=new Scanner(new FileInputStream(inputFilePath))){  
 			while(sc.hasNextLine())  { 
 				String lineData = sc.nextLine();
@@ -52,9 +52,15 @@ public class Processor {
 		logger.info("Deleting file " + fileId);
 		try {
 			OutputDeleteDocumentale output = docService.deleteFile(fileId);
+			if(output.getErrorCode() == 200) {
+				logger.info("File " + fileId + " successfully removed");
+			}else{
+				logger.error("Error calling delete service for id" + fileId , "error code: " + output.getErrorCode() + " message: " + output.getEsito());
+			}
+			this.fileManager.writeOutcomeFile(fileId, output.getErrorCode(), output.getEsito());
 		}catch(Exception e) {
 			logger.error("Error calling delete service for id" + fileId , e.getMessage());
-			this.fileManager.writeFailureFile(fileId);
+			this.fileManager.writeOutcomeFile(fileId, null, e.getMessage());
 		}
 
 	}

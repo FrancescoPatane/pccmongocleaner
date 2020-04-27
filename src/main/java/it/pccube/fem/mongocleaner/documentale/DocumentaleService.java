@@ -28,8 +28,6 @@ public class DocumentaleService {
 	@Value("${clusters.documentale.ibm}")
 	private String baseUrl;
 	
-	private static final String URL_UPLOAD = "/upload";
-
 	private static final String URL_GET_FILE = "/file";
 
 	private static final String URL_REMOVE_FILE = "/remove";

@@ -1,6 +1,7 @@
 package it.pccube.fem.mongocleaner.process;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -10,31 +11,42 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class FileManager {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(FileManager.class);
-	
-	private String failuresFilePath;
 
-	
-	public void writeFailureFile(String lineData) {
-        try (BufferedWriter out = new BufferedWriter(new FileWriter(this.failuresFilePath, true))){ 
-            out.write(lineData + System.lineSeparator()); 
-            out.close(); 
-        } 
-        catch (IOException e) { 
-        	logger.error("Exception writing line to failure file:" + lineData + "exception: " + e.getMessage());
-        }
-	}
-	
-	
+	private String outcomeFilePath;
 
 
-	public String getFailuresFilePath() {
-		return failuresFilePath;
+	public void writeOutcomeFile(String lineData, Integer errorCode, String message) {
+		try {
+			this.createFileOutcomeIfNotExists();
+			try (BufferedWriter out = new BufferedWriter(new FileWriter(this.outcomeFilePath, true))){ 
+				out.write(lineData + " - " + errorCode + " - " + message + System.lineSeparator()); 
+			} 
+		}catch (IOException e) { 
+			logger.error("Exception writing line to outcome file:" + lineData + " exception: " + e.getMessage());
+		}
 	}
 
-	public void setFailuresFilePath(String failuresFilePath) {
-		this.failuresFilePath = failuresFilePath;
+	private void createFileOutcomeIfNotExists() throws IOException {
+		File file = new File(this.outcomeFilePath);
+		if(!file.exists()) {
+			file.createNewFile();
+		}
 	}
-	
+
+
+	public String getOutcomeFilePath() {
+		return outcomeFilePath;
+	}
+
+
+	public void setOutcomeFilePath(String outcomeFilePath) {
+		this.outcomeFilePath = outcomeFilePath;
+	}
+
+
+
+
+
 }
