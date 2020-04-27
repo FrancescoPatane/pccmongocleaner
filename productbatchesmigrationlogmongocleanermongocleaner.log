@@ -1,0 +1,37 @@
+2020-04-27 11:11:35.468  INFO 6048 --- [main] i.p.f.m.MongocleanerApplication          : Starting MongocleanerApplication on DESKTOP-FARG9H9 with PID 6048 (C:\consip-eproc2\projects\mongocleaner\mongocleaner\target\classes started by Developer-PCCube in C:\consip-eproc2\projects\mongocleaner\mongocleaner)
+2020-04-27 11:11:35.473  INFO 6048 --- [main] i.p.f.m.MongocleanerApplication          : No active profile set, falling back to default profiles: default
+2020-04-27 11:11:35.994  INFO 6048 --- [main] i.p.f.m.client.RestfulClientB2B          : restful client successfully initialized
+2020-04-27 11:11:36.100  INFO 6048 --- [main] i.p.f.m.MongocleanerApplication          : Started MongocleanerApplication in 1.067 seconds (JVM running for 1.422)
+2020-04-27 11:11:36.103  INFO 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : Deleting file 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:11:36.104  INFO 6048 --- [main] i.p.f.m.documentale.DocumentaleService   : Delete documento 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:12:18.194 ERROR 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : Error calling delete service for id5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:12:18.197  INFO 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:12:18.197  INFO 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : Deleting file 5b9faa9b3adfcf6c9341a0ee
+2020-04-27 11:12:18.197  INFO 6048 --- [main] i.p.f.m.documentale.DocumentaleService   : Delete documento 5b9faa9b3adfcf6c9341a0ee
+2020-04-27 11:13:00.223 ERROR 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : Error calling delete service for id5b9faa9b3adfcf6c9341a0ee
+2020-04-27 11:13:00.224  INFO 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9faa9b3adfcf6c9341a0ee
+2020-04-27 11:13:00.224  INFO 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : Deleting file 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:13:00.224  INFO 6048 --- [main] i.p.f.m.documentale.DocumentaleService   : Delete documento 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:13:42.254 ERROR 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : Error calling delete service for id5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:13:42.255  INFO 6048 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:14:05.833  INFO 19468 --- [main] i.p.f.m.MongocleanerApplication          : Starting MongocleanerApplication on DESKTOP-FARG9H9 with PID 19468 (C:\consip-eproc2\projects\mongocleaner\mongocleaner\target\classes started by Developer-PCCube in C:\consip-eproc2\projects\mongocleaner\mongocleaner)
+2020-04-27 11:14:05.839  INFO 19468 --- [main] i.p.f.m.MongocleanerApplication          : No active profile set, falling back to default profiles: default
+2020-04-27 11:14:06.399  INFO 19468 --- [main] i.p.f.m.client.RestfulClientB2B          : restful client successfully initialized
+2020-04-27 11:14:06.515  INFO 19468 --- [main] i.p.f.m.MongocleanerApplication          : Started MongocleanerApplication in 1.092 seconds (JVM running for 1.467)
+2020-04-27 11:14:06.519  INFO 19468 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:14:06.519  INFO 19468 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9faa9b3adfcf6c9341a0ee
+2020-04-27 11:14:06.519  INFO 19468 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:15:54.011  INFO 22188 --- [main] i.p.f.m.MongocleanerApplication          : Starting MongocleanerApplication on DESKTOP-FARG9H9 with PID 22188 (C:\consip-eproc2\projects\mongocleaner\mongocleaner\target\classes started by Developer-PCCube in C:\consip-eproc2\projects\mongocleaner\mongocleaner)
+2020-04-27 11:15:54.015  INFO 22188 --- [main] i.p.f.m.MongocleanerApplication          : No active profile set, falling back to default profiles: default
+2020-04-27 11:15:54.610  INFO 22188 --- [main] i.p.f.m.client.RestfulClientB2B          : restful client successfully initialized
+2020-04-27 11:15:54.751  INFO 22188 --- [main] i.p.f.m.MongocleanerApplication          : Started MongocleanerApplication in 1.238 seconds (JVM running for 1.614)
+2020-04-27 11:15:54.755  INFO 22188 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:15:54.756  INFO 22188 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9faa9b3adfcf6c9341a0ee
+2020-04-27 11:15:54.756  INFO 22188 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:17:53.319  INFO 6544 --- [main] i.p.f.m.MongocleanerApplication          : Starting MongocleanerApplication on DESKTOP-FARG9H9 with PID 6544 (C:\consip-eproc2\projects\mongocleaner\mongocleaner\target\classes started by Developer-PCCube in C:\consip-eproc2\projects\mongocleaner\mongocleaner)
+2020-04-27 11:17:53.324  INFO 6544 --- [main] i.p.f.m.MongocleanerApplication          : No active profile set, falling back to default profiles: default
+2020-04-27 11:17:53.803  INFO 6544 --- [main] i.p.f.m.client.RestfulClientB2B          : restful client successfully initialized
+2020-04-27 11:17:53.917  INFO 6544 --- [main] i.p.f.m.MongocleanerApplication          : Started MongocleanerApplication in 0.986 seconds (JVM running for 1.326)
+2020-04-27 11:17:53.922  INFO 6544 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
+2020-04-27 11:17:53.922  INFO 6544 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9faa9b3adfcf6c9341a0ee
+2020-04-27 11:17:53.923  INFO 6544 --- [main] i.p.fem.mongocleaner.process.Processor   : 5b9fa4ac6285086a6a6c83f0
